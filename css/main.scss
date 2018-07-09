@@ -2,6 +2,22 @@ $main_color : #41454C;
 $main_color_dark : #151B24;
 $accent : #FF0000;
 
+
+@media only screen and (max-width: 600px) {
+	#cv-form{
+		display:none;
+	}	
+}
+
+
+html,
+body,
+{
+	height:100%;
+	width:100%;
+}
+
+
 .navbar{
 	background-color: #fff;
 	border-bottom:0.1px solid #ccc;
@@ -13,20 +29,71 @@ $accent : #FF0000;
 	.navbar-brand{
 		color: $main_color;
 	}
+
+	.navbar-nav{
+		padding-right:12px;
+	}
+
+	.nav-item{
+		padding-right:8px;
+	}
 	
 	.nav-link{
 		font-size: 15px;
 		font-weight:400;
 		color: $main_color;
+		padding-right:24px;
+	}
+
+	.nav-link:hover{
+		padding-bottom:2px;
+		border-bottom:4px solid $accent;
 	}
 }
 
-.body{
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+.container-fluid,
+.row,
+.col-sm-3{
+		height:100%;
+}
+
+.container-fluid{
 	text-align:center;
+	width:100%;
+	 color: $main-color;
+	 font: 300 16px/22px "Raleway","Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+	padding:0;
 
 	.row{
-		margin-top:30px;
-		padding:10px;
+		width:100%;
+
+		.col-sm-9{
+			padding:0;
+
+		#main-area{
+				padding-top:45px;
+
+		img{
+			border: 1px solid #ddd;
+			border-radius: 50%;
+			padding: 5px;
+    		background-repeat: no-repeat;
+			width: 350px;
+		}
+			}
+
+		}
+
+		.col-sm-3{
+			background-color:$main_color;
+			opacity:40%;
+		}
 	}
 }
 
@@ -41,7 +108,17 @@ h1, h2, h3, h4 {
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 54px;
   font-weight:700px;
   line-height: 44px;
+}
+
+h5 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+#primary-email{
+	color:$accent;
+	font-style: italic;
 }

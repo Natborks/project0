@@ -1,3 +1,11 @@
+@media only screen and (max-width: 600px) {
+  #cv-form {
+    display: none; } }
+html,
+body {
+  height: 100%;
+  width: 100%; }
+
 .navbar {
   background-color: #fff;
   border-bottom: 0.1px solid #ccc;
@@ -6,16 +14,50 @@
   box-shadow: 0px 10px 27px -8px #d6c9d6; }
   .navbar .navbar-brand {
     color: #41454C; }
+  .navbar .navbar-nav {
+    padding-right: 12px; }
+  .navbar .nav-item {
+    padding-right: 8px; }
   .navbar .nav-link {
     font-size: 15px;
     font-weight: 400;
-    color: #41454C; }
+    color: #41454C;
+    padding-right: 24px; }
+  .navbar .nav-link:hover {
+    padding-bottom: 2px;
+    border-bottom: 4px solid #FF0000; }
 
-.body {
-  text-align: center; }
-  .body .row {
-    margin-top: 30px;
-    padding: 10px; }
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+.container-fluid,
+.row,
+.col-sm-3 {
+  height: 100%; }
+
+.container-fluid {
+  text-align: center;
+  width: 100%;
+  color: #41454C;
+  font: 300 16px/22px "Raleway","Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0; }
+  .container-fluid .row {
+    width: 100%; }
+    .container-fluid .row .col-sm-9 {
+      padding: 0; }
+      .container-fluid .row .col-sm-9 #main-area {
+        padding-top: 45px; }
+        .container-fluid .row .col-sm-9 #main-area img {
+          border: 1px solid #ddd;
+          border-radius: 50%;
+          padding: 5px;
+          background-repeat: no-repeat;
+          width: 350px; }
+    .container-fluid .row .col-sm-3 {
+      background-color: #41454C;
+      opacity: 40%; }
 
 /*
   ========================================
@@ -26,8 +68,16 @@ h1, h2, h3, h4 {
   color: #41454C; }
 
 h2 {
-  font-size: 42px;
+  font-size: 54px;
   font-weight: 700px;
   line-height: 44px; }
+
+h5 {
+  font-size: 24px;
+  font-weight: 400; }
+
+#primary-email {
+  color: #FF0000;
+  font-style: italic; }
 
 /*# sourceMappingURL=main.css.map */
