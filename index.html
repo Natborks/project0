@@ -2,24 +2,50 @@
 <html>
     <head>
         <title>My Webpage</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
 
 		<header class="header">
-			<nav class="header-nav">
-				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="guitar.html">Guitar</a></li>
-					<li><a href="interest.html">Interests</a></li>
-				</ul>
+			<nav class="navbar navbar-expand-sm " >
+				<!-- Brand -->
+				<a class="navbar-brand" href="#">Nathanael</a>
+
+
+				  <!-- Toggler/collapsibe Button -->
+  				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+   					 <span class="navbar-toggler-icon"></span>
+  				</button>
+				
+				<!-- Navbar links -->
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="guitar.html">Guitar</a></li>
+						<li class="nav-item"><a class="nav-link" href="interest.html">Interests</a></li>
+					</ul>
+				</div>
+			
 			</nav>
 		</header>
 
 		<section class="body">
-			<h2>NatBorks</h2>
-			<h5>Nathanael Borketey-Kwaku natborks@gmail.com</h5>
-			<p>Hello, World! I'm Nathael Currerntly an intern at Moonsqure Inc. </P>
+			<div class="container-fluid">
+				<div class="row">
+				  <div class="col-sm-3"></div>
+				  <div class="col-sm-9">
+					<h2>NatBorks</h2>
+					<h5>Nathanael Borketey-Kwaku natborks@gmail.com</h5>
+					<p>Hello, World! I'm Nathael Currerntly an intern at Moonsqure Inc. </P>
+				  </div>
+				</div>
+			</div>
 		</section>
+
+		<script src="js/bootstrap.min.js"></script>
+
     </body>
 </html>
 
